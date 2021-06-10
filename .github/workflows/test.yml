@@ -1,0 +1,21 @@
+name: Solutions
+
+on: [push]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Build
+        run: |
+          curl -LOsS https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-linux.zip
+          unzip ninja-linux.zip >/dev/null && rm ninja-linux.zip
+          PATH=$PATH:$PWD
+          bin/build.sh
+      - name: Test
+        run: bin/test.sh

@@ -1,0 +1,3 @@
+[submodule "Tsunagari"]
+	path = Tsunagari
+	url = https://github.com/TsunagariEngine/Tsunagari
