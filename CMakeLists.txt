@@ -171,14 +171,14 @@ endif()
 
 add_library(tsunagari ${TSUNAGARI_SOURCES})
 
-add_executable(wk1-patterncount ${ADVENT}/src/wk1-patterncount.cpp)
-target_link_libraries(wk1-patterncount tsunagari)
-add_executable(wk1-frequentwords ${ADVENT}/src/wk1-frequentwords.cpp)
-target_link_libraries(wk1-frequentwords tsunagari)
-add_executable(wk1-reversecomplement ${ADVENT}/src/wk1-reversecomplement.cpp)
-target_link_libraries(wk1-reversecomplement tsunagari)
-add_executable(wk1-patternmatching ${ADVENT}/src/wk1-patternmatching.cpp)
-target_link_libraries(wk1-patternmatching tsunagari)
+add_executable(1-2-patterncount ${ADVENT}/src/1-2-patterncount.cpp)
+target_link_libraries(1-2-patterncount tsunagari)
+add_executable(1-2-frequentwords ${ADVENT}/src/1-2-frequentwords.cpp)
+target_link_libraries(1-2-frequentwords tsunagari)
+add_executable(1-3-reversecomplement ${ADVENT}/src/1-3-reversecomplement.cpp)
+target_link_libraries(1-3-reversecomplement tsunagari)
+add_executable(1-3-patternmatching ${ADVENT}/src/1-3-patternmatching.cpp)
+target_link_libraries(1-3-patternmatching tsunagari)
 
 include_directories(${HERE}/src)
 
