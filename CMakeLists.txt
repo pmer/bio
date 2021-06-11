@@ -179,6 +179,8 @@ add_executable(1-3-reversecomplement ${ADVENT}/src/1-3-reversecomplement.cpp)
 target_link_libraries(1-3-reversecomplement tsunagari)
 add_executable(1-3-patternmatching ${ADVENT}/src/1-3-patternmatching.cpp)
 target_link_libraries(1-3-patternmatching tsunagari)
+add_executable(1-3-exercise-break ${ADVENT}/src/1-3-exercise-break.cpp)
+target_link_libraries(1-3-exercise-break tsunagari)
 
 include_directories(${HERE}/src)
 
