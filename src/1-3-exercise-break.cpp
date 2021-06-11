@@ -15,7 +15,6 @@
 #include "util/string2.h"
 
 #include "basename.cpp"
-#include "complement.cpp"
 #include "join.cpp"
 
 static Vector<size_t>
@@ -46,7 +45,7 @@ patternMatch(StringView pattern, StringView text) noexcept {
 
 static void
 test(StringView pattern, StringView text) noexcept {
-    sout << join(patternMatch(reverseComplement(pattern), text), " ") << '\n';
+    sout << join(patternMatch(pattern, text), " ") << '\n';
 }
 
 int
